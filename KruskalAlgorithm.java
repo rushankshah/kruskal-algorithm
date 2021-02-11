@@ -49,7 +49,7 @@ public class KruskalAlgorithm {
             if (count != numberOfVertices - 1) {
                 if (checkParent(parent, edge.source) != checkParent(parent, edge.destination)) {
                     mst.add(edge);
-                    parent.set(edge.source, edge.destination);
+                    parent.set(edge.destination, edge.source);
                     count++;
                 }
             }
